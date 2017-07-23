@@ -5,6 +5,11 @@ body{
     font-family: sans-serif;
     line-height: 1.428;
     font-size: 14px;
+    background-image: url(../../images/bg-image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* navbar top styles starts here */
 input.search-todo-list{
@@ -16,15 +21,8 @@ input.search-todo-list{
 /* navbar top styles ends here */
 /* content section starts here */
 .content{
-    background-image: url(../../images/bg-image.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-top: 64px;
     margin-bottom: 50px;
-    width: 100%;
-    height: 100%;
 }
 .todo-item{
     margin-top: 10px;
