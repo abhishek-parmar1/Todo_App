@@ -58,3 +58,22 @@ button{
     background-color: #80bfff;
 }
 /* navbar bottom styles ends here */
+/* medai queries */
+@media (max-width: 768px) {
+    div.navbar-header{
+        float: left;
+    }
+    div.search-media{
+        text-align: center;
+    }
+    input.search-todo-list{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 40px;
+    }
+    .content{
+        margin-top: 110px;
+        margin-bottom: 100px;
+    }
+}

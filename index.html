@@ -2,6 +2,8 @@
 <html lang="en" ng-app="ngTodo">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
@@ -15,7 +17,7 @@
         <!-- navbar top starts here -->
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container-fluid">
-              <div class="row">
+              <div class="row-fluid">
                   <div class="col-sm-2">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">
@@ -26,7 +28,7 @@
                   <div class="col-sm-8">
                       <h2 class="text-center">Today's Todo List</h2>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-2 search-media">
                     <input type="text" placeholder="search..." ng-model="query" class="search-todo-list">
                   </div>
               </div>
@@ -34,7 +36,7 @@
         </nav>
         <!-- navbar top ends here -->
         <!-- content section starts here -->
-        <div class="row">
+        <div class="row-fluid">
             <div class="col-sm-12 content">
                 <div class="row">
                     <div class="col-sm-6 col-sm-offset-3 empty-todo-list-message" ng-if="todoArray.length == 0">
@@ -67,7 +69,7 @@
         <!-- navbar bottom starts here -->
         <nav class="navbar navbar-default navbar-fixed-bottom">
           <div class="container-fluid">
-            <div class="row">
+            <div class="row-fluid">
                 <div class="col-sm-4">
                     <input type="text" placeholder="Add Todo Item" required ng-model="newTodo.name" >
                 </div>
