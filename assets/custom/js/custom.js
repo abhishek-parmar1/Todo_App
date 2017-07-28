@@ -14,6 +14,8 @@ ngTodo.controller('mainController',function($scope,$localStorage){
     $scope.addTodo = function(newTodo){
         $scope.todoArray.splice(0,0, { title : newTodo.name, details : newTodo.details});
         $localStorage.todoArray = $scope.todoArray;
+        $scope.newTodo.name = null;
+        $scope.newTodo.details = null;
     }
     
     $scope.removeTodo = function(index){
